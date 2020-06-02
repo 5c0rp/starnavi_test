@@ -4,9 +4,9 @@
     1. Run server - python manage.py runserver
     2. Run bot - python bot.py
 
-P.S<br>
-All users have password "strong_password".
-If in config file number_of_users = 3 bot create 3 users with username "user_0", "user_1" and "user_2".
+P.S.<br>
+All users, created by the bot, have password "strong_password".
+If in config file number_of_users = 3 - bot create 3 users with username "user_0", "user_1" and "user_2".
 
 **API:**
     
