@@ -26,10 +26,12 @@ class UserSerializer(serializers.ModelSerializer):
         )
 
     def get_last_login(self, instance):
-        return instance.last_login.strftime('%Y-%m-%dT%H:%M:%S')
+        time = instance.last_login
+        return time.strftime('%Y-%m-%dT%H:%M:%S') if time else None
 
     def get_last_activity(self, instance):
-        return instance.last_activity.strftime('%Y-%m-%dT%H:%M:%S')
+        time = instance.last_activity
+        return time.strftime('%Y-%m-%dT%H:%M:%S') if time else None
 
     def create(self, validated_data):
         user = User(
